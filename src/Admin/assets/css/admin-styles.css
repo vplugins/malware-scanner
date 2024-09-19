@@ -1,0 +1,201 @@
+/* General Layout */
+.wrap {
+    margin-top: 20px;
+    background: #f0f0f1;
+    color: #3c434a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+.dashboard-title {
+    font-size: 1.3125rem;
+    flex-grow: 1;
+    color: #2d2d2d !important;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    line-height: 1.5rem !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    margin: 20px 0px !important;
+}
+
+/* Overview Section */
+.overview-section {
+    margin-bottom: 20px;
+}
+
+.overview-section .heading-row .section-title {
+    text-align: center;
+}
+
+/* Heading Row */
+.heading-row {
+    background-color: #1B719E;
+    color: #fff;
+    padding: 25px;
+}
+
+.heading-row .section-title {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Metrics Boxes */
+.metric-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.metric-box {
+    background-color: #fff; /* Light background color for each box */
+    border: 1px solid #ddd; /* Light border */
+    padding: 25px; /* Padding inside each box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    flex: 1 1 calc(20% - 15px); /* Adjusted flex to fit in row and account for gaps */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    min-width: 200px; /* Minimum width to ensure readability */
+    text-align: center; /* Center text in each box */
+    line-height: 0.5;
+}
+
+/* Example for specific icons, if needed */
+.metric-box .dashicons {
+    font-size: 30px; /* Larger icon size */
+    color: #1B719E;
+    padding-bottom: 15px; /* Space between icon and text */
+}
+
+.metric-box .dashicons .dashicons-clock {
+    padding-bottom: 0px;
+}
+
+.metric-box h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.metric-box p {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .metric-box {
+        flex: 1 1 calc(50% - 15px); /* Two boxes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .metric-box {
+        flex: 1 1 100%; /* One box per row on very small screens */
+    }
+}
+
+/* Scan Scheduling Section */
+.scan-scheduling-section {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.scan-scheduling-section .heading-box {
+    background-color: #f9f9f9;
+    color: #fff;
+    padding: 15px;
+}
+
+.scan-scheduling-section .heading-box .section-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.scan-scheduling-section .schedule-box {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px 0px 15px 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.scan-scheduling-section .dashicons {
+    font-size: 24px;
+    color: #3498db;
+    margin-right: 10px;
+}
+
+/* Recent Activity Section */
+.recent-activity-section {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.recent-activity-section .section-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.recent-activity-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-activity-section th,
+.recent-activity-section td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activity-section th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+}
+
+/* System Status Section */
+.system-status-section {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.system-status-section .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.system-status-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.system-status-section li {
+    padding: 5px 0;
+}
+
+/* Actions Section */
+.actions-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-section .button-primary,
+.actions-section .button-secondary {
+    padding: 6px 12px;
+    font-size: 14px;
+}
